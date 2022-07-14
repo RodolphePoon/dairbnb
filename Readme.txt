@@ -10,3 +10,6 @@ renter :
 client :
 - book property
 - cancel booking
+
+
+Chainmessage.deployed().then(res => app=res)

@@ -67,6 +67,26 @@ contract Airbnb {
         emit NewProperty(propertyId++);
     }
 
+    address public currentUserAddress;
+
+    function showSender() public {
+        currentUserAddress = address(msg.sender);
+    }
+
+    // Defining function to calculate sum of 2 numbers
+    function add() public view returns (uint256) {
+        uint256 num1 = 10;
+        uint256 num2 = 16;
+        uint256 sum = num1 + num2;
+        return sum;
+    }
+
+    string public mess = "helloworld";
+
+    function helloworld() public view returns (string memory) {
+        return mess;
+    }
+
     /**
      * @dev Make an Airbnb booking
      * @param _propertyId id of the property to rent out
